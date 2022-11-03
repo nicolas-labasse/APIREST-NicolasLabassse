@@ -1,0 +1,15 @@
+<p>lista-curso works!</p>
+<div class="container-fluid">
+    <div class="row">
+     
+        <div class="col-4 mt-4" *ngFor="let curso of cursos$ | async">
+            <div class="card">
+                <img [src]="curso.imagen" class="card-img-top" alt="Fissure in Sandstone"/>
+                <div class="card-body">
+                  <h5 class="card-title">{{ curso.nombre }}</h5>
+                  <p class="card-text">{{ curso.profesor }}</p>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
